@@ -1,0 +1,26 @@
+.h2 {
+    font-weight: 400;
+    color: white;
+}
+
+.span{
+    font-weight: bold;
+}
+
+.NavBar{
+    padding: .5rem;
+    background-color: #333;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.carrito{
+    height: 70px;
+}
