@@ -1,14 +1,13 @@
 import ItemCount from "../itemCount/ItemCount";
-
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 function InfoCard() {
 
     return (
 
-        <div >
-            <h5 >Producto</h5>
-            <p >Descrip.</p>
+        <>
+            
             <ItemCount stock={5} initial={1}/>
-        </div>
+        </>
 
     );
   }

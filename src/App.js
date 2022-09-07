@@ -8,7 +8,7 @@ import Card from './components/Card';
 function App() {
   
   return (
-    <div>
+    <>
     <header>
       <NavBar/>
     </header>
@@ -18,7 +18,7 @@ function App() {
       <Card />
       <Card />
     </div>
-    </div>
+    </>
   );
 }
 

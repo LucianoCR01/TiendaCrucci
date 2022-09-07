@@ -1,19 +1,14 @@
 import "./styles/card.css"
-import ItemCount from './itemCount/ItemCount';
-import { useEffect, useState } from "react"
 import InfoCard from "./infoCard/InfoCard";
+import ItemListContainer from "./ItemListContainer/ItemListContainer";
 
 const Card = ({stock}) => {
-
-  // const [contadorSuma,setSuma]=useState(-1)
-  // useEffect (()=>{
-  //   setSuma(contadorSuma+1)},[stock]);
-    
+ 
   return (
     <div className="cards">
+      <ItemListContainer/>
       <InfoCard/>
       {stock }
-      {/* {contadorSuma} */}
     </div>
   )
 }
