@@ -14,9 +14,6 @@ function App() {
     </header>
     <div className='divBody'>
       <Card />
-      <Card />
-      <Card />
-      <Card />
     </div>
     </>
   );

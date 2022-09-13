@@ -1,20 +1,20 @@
-import Item from "../Item/Item"
+// import Item from "../Item/Item"
 
-const ItemList = ({lista}) => {
+// const ItemList = ({lista}) => {
 
-  return (
-    <>
-    {
-        lista.map((produc)=>(
-            <Item 
-                key={produc.id}
-                title={produc.title} 
-                price={produc.price} 
-                img={produc.img}/>
-            ))
-    }
-    </>
-  )
-}
+//   return (
+//     <>
+//     {
+//         lista.map((produc)=>(
+//             <Item 
+//                 key={produc.id}
+//                 title={produc.title} 
+//                 price={produc.price} 
+//                 img={produc.img}/>
+//             ))
+//     }
+//     </>
+//   )
+// }
 
-export default ItemList
+// export default ItemList

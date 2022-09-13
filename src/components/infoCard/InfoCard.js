@@ -1,5 +1,4 @@
 import ItemCount from "../itemCount/ItemCount";
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
 function InfoCard() {
 
     return (

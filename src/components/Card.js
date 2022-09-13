@@ -1,14 +1,11 @@
-import "./styles/card.css"
-import InfoCard from "./infoCard/InfoCard";
-import ItemListContainer from "./ItemListContainer/ItemListContainer";
 
-const Card = ({stock}) => {
+import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
+
+const Card = () => {
  
   return (
-    <div className="cards">
-      <ItemListContainer/>
-      <InfoCard/>
-      {stock }
+    <div>
+      <ItemDetailContainer/>
     </div>
   )
 }
