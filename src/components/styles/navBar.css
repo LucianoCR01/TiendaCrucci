@@ -15,8 +15,14 @@
     justify-content: space-between;
 }
 
-.link{
+.blanco{
     color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.rojo{
+    color: red;
     text-decoration: none;
     margin-right: 1rem;
 }

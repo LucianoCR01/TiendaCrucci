@@ -1,20 +1,26 @@
 import Item from "../Item/Item"
-import "../styles/card.css"
-
+import { Link } from "react-router-dom"
 
 const ItemDetail  = ({lista}) => {
 
     return (
       <>
-      {
+        {
           lista.map((produc)=>(
-              <Item 
-                  key={produc.id}
+            <Link 
+            key={produc.id}
+            to ={'/detail/' + produc.id}
+            style={{textDecoration: 'none', color:'black' }}
+            >
+              <Item
+                  propiedad={produc.propiedad} 
                   title={produc.title} 
                   price={produc.price} 
-                  img={produc.img}/>
-          ))
-      }
+                  img={produc.img}/>    
+            </Link> 
+            )
+          )
+        }
       </>
     )
   }

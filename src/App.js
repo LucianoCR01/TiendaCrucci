@@ -1,21 +1,24 @@
-import './components/NavBar';
-import './components/Card'
-import './App.css';
 import NavBar from './components/NavBar';
 import Card from './components/Card';
-
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Computadoras from './components/Computadoras/Computadoras';
+import Teclados from './components/Teclados/Teclados';
 
 function App() {
   
   return (
-    <>
-    <header>
+    <BrowserRouter>
       <NavBar/>
-    </header>
-    <div className='divBody'>
-      <Card />
-    </div>
-    </>
+      <Routes>
+        <Route path='/' element={<Card className='divBody'/>}/>
+        <Route path='Contacto' element={<div>Contacto</div>}/>
+        <Route path='Computadoras' element={<Computadoras/>}/>
+        <Route path='Teclados' element={<Teclados/>}/>
+        <Route path='detail/:id' element={<ItemDetailContainer/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

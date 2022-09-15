@@ -1,4 +1,5 @@
 
+import "../App.css";
 import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
 
 const Card = () => {
