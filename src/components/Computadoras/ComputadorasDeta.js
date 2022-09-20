@@ -6,19 +6,21 @@ const ComputadorasDeta = ({lista}) => {
     return (
         <>
         {console.log(arr)}
-        {  
+        {   arr.map(ele => (
             <Link 
-            key={arr.id}
-            to ={'/detail/' + arr.id}
+            key={ele.id}
+            to ={'/detail/' + ele.id}
             style={{textDecoration: 'none', color:'black' }}
             >
             <Item
-            propiedad={arr.propiedad} 
-            title={arr.title} 
-            price={arr.price} 
-            img={arr.img}/>    
+            propiedad={ele.propiedad} 
+            title={ele.title} 
+            price={ele.price} 
+            img={ele.img}/>    
             </Link> 
+        ))
         }
+
         </>
       )
     }

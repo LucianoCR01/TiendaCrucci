@@ -1,9 +1,28 @@
+import Item from "../Item/Item"
+import { Link } from "react-router-dom"
 
-
-const TecladosDeta = () => {
+const TecladosDeta = ({lista}) => {
+  const arr = lista.filter((ele)=>(ele.propiedad.includes('Teclado')))
   return (
-    <div>TecladosDeta</div>
-  )
-}
+      <>
+      {console.log(arr)}
+      {   arr.map(ele => (
+          <Link 
+          key={ele.id}
+          to ={'/detail/' + ele.id}
+          style={{textDecoration: 'none', color:'black' }}
+          >
+          <Item
+          propiedad={ele.propiedad} 
+          title={ele.title} 
+          price={ele.price} 
+          img={ele.img}/>    
+          </Link> 
+      ))
+      }
+
+      </>
+    )
+  }
 
 export default TecladosDeta

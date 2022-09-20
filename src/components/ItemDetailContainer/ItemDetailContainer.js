@@ -26,7 +26,8 @@ const ItemDetailContainer = () => {
     
   return (
     <>
-    <ItemDetail lista ={listaProductos}/>
+    {console.log(id)}
+    {<ItemDetail lista ={listaProductos}/>}
     </>
   )
 }

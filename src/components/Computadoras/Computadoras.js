@@ -19,8 +19,8 @@ const Computadoras = () => {
   const getProductos = new Promise ((resolve,reject)=>{
           setTimeout(()=>{
               resolve(datos)
-              //const datosFiltrados = datos.filter(listaProductos=>listaProductos.id === id)
-              //setListaProductos(datosFiltrados)
+              const datosFiltrados = datos.filter(listaProductos=>listaProductos.id === id)
+              setListaProductos(datosFiltrados)
           },2000)   
       })
   
