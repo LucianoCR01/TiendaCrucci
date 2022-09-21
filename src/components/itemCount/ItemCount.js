@@ -1,16 +1,22 @@
-import { useState } from "react";
 
-function ItemCount ({stock}) {
-    const [cantidad, setCantidad] = useState(stock);
-    return(
-        <>
+const ItemCount = ({setCount, count})=> {
+    const onAdd = () => {
+        setCount(count + 1 )
+    }
+    const onRemove = () =>{
+        if (count === 0){
+            return
+        }
+        setCount(count-1)
+    }
+return(
+    <div>
+    <p>{count}</p>
+    <button onClick={onRemove}> - </button>
+    <button onClick={onAdd}> + </button>
+    </div>
+)
 
-        {cantidad===0 ? null : <button onClick={()=>setCantidad(cantidad-1)} >Agregar Carrito</button>}
-        {cantidad ===stock ? null : <button onClick={()=>setCantidad(cantidad+1)} >Quitar Carrito</button>}
-        <p>La cantidad de stock es: {cantidad}</p>
-        </>
-        
-    );
 }
 
 
